@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style> /* css */
+            @import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;800&display=swap'); /* body */
+            @import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;800&family=Lobster&display=swap'); /* header */
+            @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap'); /* title */
+            
+            body {
+                background: #FC466B;  /* fallback for old browsers */
+                background: -webkit-linear-gradient(to right, #3F5EFB, #FC466B);  /* Chrome 10-25, Safari 5.1-6 */
+                background: linear-gradient(140deg, #3F5EFB, #FC466B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                background-repeat: no-repeat;
+                min-height: 100vh;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+            header { 
+                padding: 10px 0px 10px 0px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .web-title {
+                width: 250px;
+                background-color: white;
+                border-radius: 9vw;
+                padding: 20px 0px 20px 0px;
+                -webkit-box-shadow: 0px 49px 160px 8px rgba(0,0,0,0.3);
+                -moz-box-shadow: 0px 49px 160px 8px rgba(0,0,0,0.3);
+                box-shadow: 0px 49px 160px 8px rgba(0,0,0,0.3);
+                font-family: Lobster, serif;
+                font-size: 30px;
+                color: black;
+                font-weight: bold;
+                text-align: center;
+            }
+            .box {
+                margin-top: -60px;
+                padding-bottom: -20px;
+                width: 1000px;
+                background-color: white;
+                border-radius: 5vw;
+                display: flex;
+                flex-direction: row;
+            }
+            .cover {
+                height: 25%;
+            }
+            #img-div {
+                display: flex;
+            }
+            .image-parent {
+                margin-left: 15%;
+                margin-top: 10%;
+                width: auto;
+                height: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            #image {
+                max-width: 100%;
+                height: auto;
+            }
+            .img-text-wrapper {
+                margin-top: 25%;
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                flex-grow: auto;
+            }
+            #title {
+                width: 600px;
+                background-color: black;
+                color: white;
+                font-family: 'Monoton','Baloo Paaji 2',monospace;
+                font-size: 80px;
+            }
+            #img-caption {
+                font-family: 'Baloo Paaji 2', monospace;
+                font-weight: normal;
+                font-size: 20px;
+                align-self: flex-start;
+            }
+            .tribute-info-wrapper {
+                width: 1000px;
+                height: 500px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .tribute-info {
+                font-family: 'Baloo Paaji 2', courier;
+                font-size: 30px;
+                text-align: center;
+                margin-top: 350px;
+                width: 700px;
+            }
+            .see-more:hover{
+                border-width: 1px;
+                border-style: solid;
+                border-color: red;
+                -webkit-box-shadow: 0px 49px 160px 8px rgba(0,0,0,0.3);
+                -moz-box-shadow: 0px 49px 160px 8px rgba(0,0,0,0.3);
+                box-shadow: 0px 49px 160px 8px rgba(0,0,0,0.3);
+            }
+            .see-more {
+                border-radius: 15px;
+                text-decoration: none;
+                padding: 5px 10px 5px 10px;
+                margin-top: 100px;
+                color: purple;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="main">
+            <header>
+                <div class="web-title">
+                    Profil Orang
+                </div>
+            </header>
+            <div class="box">
+                <article>
+                    <section id="cover" class="cover">
+                        <div id="img-div">
+                            <div class="image-parent">
+                                <img src="tribute_image_v2_finale.png" id="image"/>
+                            </div>
+                            <div class="img-text-wrapper">
+                                <div id="title">Roihan Z. R.</div>
+                                <div id="img-caption">
+                                    &lt;-- Foto ketika Ia akan berperang.
+                                </div> <!-- img-caption -->
+                            </div> <!-- img-text-wrapper -->
+                        </div> <!-- img-div -->
+                    </section> <!-- cover -->
+                    <div class="tribute-info-wrapper">
+                        <section id="tribute-info" class="tribute-info">
+                            Ia adalah anak asli Indonesia, suku Jawa.<br/>
+                            Sangat suka dengan kendaraan, khususnya <strong>truk.</strong><br/>
+                            Hobi menggambar, menggambar <strong>truk.</strong><br>
+                            <br/>
+                            <a href="https://cdn.ebaumsworld.com/2019/11/22/044122/86123281/what-people-50-years-ago-thought-cars-would-look-like-now-cybertruck-meme.jpg"
+                               rel="noopener"
+                               target="_blank"
+                               class="see-more"
+                               id="tribute-link">Klik untuk tahu lebih lanjut</a>
+                        </section> <!-- tribute-info -->
+                    </div> <!-- tribute-info-wrapper -->
+                </article>
+            </div> <!-- box -->
+        </div> <!-- main -->
+    </body>
+</html>
